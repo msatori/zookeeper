@@ -1,5 +1,6 @@
 //require express
 const express = require('express');
+const PORT = process.env.PORT || 3001;
 //assign to app variable so that you can chain methods to the express server later
 const app = express()
 //create variable to require data from animals
@@ -62,6 +63,6 @@ app.get('/api/animals', (req, res) => {
 });
 
 //chain the listen method to the server
-app.listen(3001, () => {
-    console.log(`API server now on port 3001!`)
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`)
 })
