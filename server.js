@@ -72,6 +72,10 @@ app.get('/api/animals/:id', (req, res) => {
         res.sendStatus(404);
     }
 });
+
+app.post('/api/animals', (req, res) => {
+    
+})
 //chain the listen method to the server
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`)
