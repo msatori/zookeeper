@@ -1,27 +1,24 @@
 {
   "name": "zookeeper",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.x"
-  },
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/msatori/zookeeper.git"
   },
-  "author": "",
+  "author": "maya santiago",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/msatori/zookeeper/issues"
   },
-  "homepage": "https://github.com/msatori/zookeeper#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/msatori/zookeeper#readme"
 }
