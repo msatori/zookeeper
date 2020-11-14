@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 //require express
 const express = require('express');
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3001;
 //assign to app variable so that you can chain methods to the express server later
 const app = express();
 //parse incoming string or array data
